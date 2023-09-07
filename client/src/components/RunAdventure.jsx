@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../styles/RunAdventure.scss";
 
 function RunAdventure(props) {
   const [progress, setProgress] = useState(0);
