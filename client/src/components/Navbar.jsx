@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Navbar.scss'; // Import the SCSS file
+import logo from "../images/logo_transparent.png";
 
 function Navbar() {
   // State to track the user's authentication status
