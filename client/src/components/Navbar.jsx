@@ -27,14 +27,12 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <a className="navbar-brand" href="/">
-          Urban Odyssey
+        <a className="navbar-brand" href="#">
+          <img src={logo} alt="Urban Odyssey" />
         </a>
         {/* Display "Logged in as" to the left of the navigation list */}
         {isLoggedIn && (
-          <span className="navbar-text">
-            Logged in as: {userEmail}
-          </span>
+          <span className="navbar-text">Logged in as: {userEmail}</span>
         )}
         <button
           className="navbar-toggler"
@@ -72,7 +70,10 @@ function Navbar() {
             {/* Conditionally render login/logout */}
             {isLoggedIn ? (
               <li className="nav-item">
-                <button className="btn btn-link nav-link" onClick={handleLogout}>
+                <button
+                  className="btn btn-link nav-link"
+                  onClick={handleLogout}
+                >
                   Logout
                 </button>
               </li>
